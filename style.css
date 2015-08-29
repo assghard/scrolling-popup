@@ -1,0 +1,54 @@
+.popup{
+position: fixed;
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.7);
+top: 0;
+left: 0;
+z-index: 10;
+display: none;
+}
+.fixing-block{
+width: 100%;
+height: 100%;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: transparent;
+z-index: 11;
+display: none;
+}
+.scrolling-content{
+position: relative;
+width: 50% !important;
+height: 100%;
+margin: 0 auto;
+background: #fff;
+}
+
+/**********	Body styles	(you can remove it) *************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+width: 100%;
+height: 100%;
+font-size: 20px;
+}
+ul{
+padding: 25px 50px;
+color: red;
+}
+@media screen and (max-width:992px){
+	.scrolling-content{
+		width: 75% !important;
+	}
+}
+@media screen and (max-width:768px){
+	.scrolling-content{
+		width: 100% !important;
+	}
+}
+/********************************/
